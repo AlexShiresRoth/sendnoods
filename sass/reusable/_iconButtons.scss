@@ -1,0 +1,34 @@
+.light-icon {
+	color: $color-orange;
+	padding: 0.5rem;
+	border-radius: 50%;
+	box-shadow: 0 5px 5px #eee;
+	transition: all 0.4s ease-in-out;
+	background: #fff;
+	&:hover {
+		cursor: pointer;
+		background: $color-orange;
+		border-radius: 50%;
+		box-shadow: 0 5px 5px #eee;
+		color: #fff;
+		padding: 0.5rem;
+		transform: translateY(0.3vh);
+	}
+}
+.dark-icon {
+	color: $color-orange;
+	padding: 0.5rem;
+	border-radius: 50%;
+	box-shadow: 0 5px 5px darken(#333, 5%);
+	transition: all 0.4s ease-in-out;
+	background: lighten(#333, 5%);
+	&:hover {
+		cursor: pointer;
+		background: $color-orange;
+		border-radius: 50%;
+		box-shadow: 0 5px 5px darken($color-orange, 5%);
+		color: $color-white;
+		padding: 0.5rem;
+		transform: translateY(0.3vh);
+	}
+}

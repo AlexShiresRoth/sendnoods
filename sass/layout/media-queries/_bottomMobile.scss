@@ -1,0 +1,13 @@
+@media screen and (max-width: 880px) {
+	.results__nav {
+		display: flex;
+		flex-direction: row;
+		font-size: 60%;
+		padding: 1rem 0;
+		position: fixed;
+	}
+	form {
+		display: flex;
+		flex-direction: row;
+	}
+}

@@ -1,0 +1,138 @@
+.ramen__list--container {
+	min-height: 100vh;
+	width: 100%;
+	padding: 7rem 4rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #fff;
+}
+
+.ramen--list {
+	@include display-list;
+	list-style: none;
+}
+
+.list--item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	box-shadow: 0 5px 5px #eeeeee;
+	background: #fff;
+	width: 15rem;
+	transition: all 0.2s ease-in-out;
+	padding: 0 1rem;
+	color: $color-orange;
+
+	p:last-child {
+		margin: 0.5rem 0;
+	}
+	&:hover {
+		box-shadow: 0 20px 20px #eeee;
+	}
+
+	& span {
+		color: goldenrod;
+	}
+	color: #666;
+}
+.rating__container {
+	margin: 0.5rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	&--stars {
+		color: goldenrod;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	&--total {
+		color: #666;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.price__container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 0.5rem 0;
+	width: 100%;
+}
+.hours__container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.address__container {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&--favorite {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0.5rem;
+		& p {
+			margin: 0.5rem;
+		}
+	}
+}
+.img-container {
+	border-radius: 50%;
+	max-height: 7rem;
+	max-width: 7rem;
+	display: flex;
+
+	margin: 0.5rem;
+	border: 5px solid darken(rgba(255, 69, 0, 0.6), 10%);
+	& figure {
+		max-height: 100%;
+
+		& img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+}
+
+.ramen__title {
+	margin: 1.3rem 0;
+
+	font-weight: 700;
+	color: darken(#ff4500, 5%);
+}
+
+@media screen and (min-width: 1400px) {
+	.ramen--list {
+		@include display-list-wide;
+		list-style: none;
+	}
+}
+@media screen and (min-width: 900px) and (max-width: 1150px) {
+	.ramen--list {
+		@include display-list-small;
+		list-style: none;
+	}
+}

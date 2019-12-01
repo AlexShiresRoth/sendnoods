@@ -1,0 +1,50 @@
+.hidden {
+	max-height: 0px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.animate-box-shadow {
+	animation-name: boxShadowFlash;
+	animation-duration: 0.7s;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation-fill-mode: forwards;
+	&:hover {
+		transform: translateY(0.3vh);
+	}
+}
+.dark {
+	background: $dark-mode;
+	color: $color-white;
+	box-shadow: 0 4px 4px darken($dark-mode, 10%);
+	border: 1px solid #322;
+}
+.dark-favorite {
+	background: $dark-mode;
+	color: $color-orange;
+	box-shadow: 0 2px 2px darken($dark-mode, 5%);
+}
+.dark-favorite-item {
+	border-bottom: 1px solid lighten($dark-mode, 5%);
+	background: $dark-mode;
+}
+.dark-accent {
+	background: lighten($dark-mode, 3%);
+	color: darken(#f3f3f3, 5%);
+	box-shadow: 0 4px 4px darken($dark-mode, 5%);
+	&:hover {
+		box-shadow: 0 6px 6px darken($dark-mode, 7%);
+	}
+}
+.dark-borders {
+	border: 0;
+	border-top: 1px solid lighten($dark-mode, 10%);
+	border-bottom: 1px solid lighten($dark-mode, 10%);
+}
+
+.favorited {
+	background: $color-orange;
+	border-radius: 50%;
+	color: $color-white;
+	padding: 0.5rem;
+}

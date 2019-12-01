@@ -1,0 +1,144 @@
+.form__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
+	padding: 1rem;
+	min-height: 5rem;
+	box-shadow: 0 2px 2px #eee;
+
+	&--search {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: 0 1rem;
+	}
+	&--dark-theme-toggle {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		&--dark {
+			background: $color-orange;
+			box-shadow: 0 2px 2px darken($color-orange, 5%);
+			border: 0;
+			transition: all 0.3s ease-in-out;
+			border-radius: 50%;
+			&:focus {
+				border-radius: 50%;
+				outline: 0px solid darken($color-orange, 5%);
+			}
+			&:hover {
+				background: darken(#fff, 5%);
+				box-shadow: 0 2px 2px darken(#fff, 10%);
+				cursor: pointer;
+			}
+			&:hover i {
+				color: darken($color-orange, 5%);
+			}
+			& i {
+				color: $color-white;
+				font-size: 1.2rem;
+				padding: 0.7rem;
+			}
+		}
+		&--light {
+			background: transparent;
+			box-shadow: 0 2px 2px darken(#eee, 10%);
+			border: 0;
+			transition: all 0.3s ease-in-out;
+			border-radius: 50%;
+			&:focus {
+				border-radius: 50%;
+				outline: 0px solid darken($color-orange, 5%);
+			}
+			&:hover {
+				background: darken($color-orange, 5%);
+				box-shadow: 0 2px 2px darken($color-orange, 10%);
+				cursor: pointer;
+			}
+			&:hover i {
+				color: $color-white;
+			}
+			& i {
+				color: $color-orange;
+				font-size: 1.2rem;
+				padding: 0.7rem;
+			}
+		}
+	}
+}
+
+.logo__container {
+	display: flex;
+	align-items: center;
+	flex: 2;
+	& h1 {
+		text-transform: uppercase;
+		font-size: 3rem;
+	}
+	& img {
+		width: 2.5rem;
+	}
+}
+.input__row {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	flex: 1;
+	&:first-child {
+		color: $color-white;
+	}
+	&--input {
+		padding: 1.01rem;
+		width: 15rem;
+		border: 1px solid #eee;
+		background-color: #eee;
+	}
+	&--input:focus {
+		outline: none;
+	}
+	align-items: center;
+}
+//use mixin for these two---
+.search__btn {
+	color: #fff;
+	padding: 1.1rem;
+	border: 1px solid $color-orange;
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+	background-color: $color-orange;
+	transition: 0.2s linear;
+	&:hover,
+	&:active {
+		cursor: pointer;
+		border: 1px solid darken(#ff4500, 10%);
+		color: $color-white;
+		background-color: darken(#ff4500, 10%);
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.clear__btn {
+	color: #fff;
+	padding: 1.1rem;
+	border: 1px solid $color-orange;
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+	background-color: $color-orange;
+	transition: 0.2s linear;
+	&:hover,
+	&:active {
+		cursor: pointer;
+		border: 1px solid darken(#ff4500, 10%);
+		color: #fff;
+		background-color: darken(#ff4500, 10%);
+	}
+	&:focus {
+		outline: none;
+	}
+}

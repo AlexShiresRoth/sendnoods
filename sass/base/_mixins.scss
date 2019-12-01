@@ -1,0 +1,27 @@
+@mixin display-list-wide() {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	gap: 1rem;
+	color: $color-white;
+}
+@mixin display-list() {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	gap: 1rem;
+	color: $color-white;
+}
+@mixin display-list-small() {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	gap: 1rem;
+	color: $color-white;
+}
+@mixin display-list-mobile() {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	color: $color-white;
+}

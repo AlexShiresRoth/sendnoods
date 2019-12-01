@@ -1,0 +1,52 @@
+.favorite__list {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	background: #eee;
+	box-shadow: 0 2px 2px #eee;
+	max-height: 10rem;
+	min-width: 10rem;
+	overflow-y: scroll;
+	&--item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		align-items: flex-start;
+		min-width: 10rem;
+		list-style: none;
+		border-bottom: 1px solid #fff;
+		padding: 0.5rem;
+		transition: all 0.4s ease-in-out;
+		&:hover {
+			background: $color-orange;
+			color: #fff;
+			opacity: 0.9;
+			cursor: pointer;
+			border-bottom: 1px solid #eee;
+		}
+		&:hover i {
+			color: #fff;
+		}
+		& i {
+			color: $color-orange;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&:hover p > a {
+			color: #fff;
+		}
+		& p {
+			font-size: 0.8rem;
+			& a {
+				text-decoration: none;
+				color: $color-orange;
+				font-weight: 500;
+				font-size: 1rem;
+			}
+		}
+	}
+}
