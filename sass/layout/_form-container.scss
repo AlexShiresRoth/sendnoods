@@ -76,12 +76,11 @@
 	display: flex;
 	align-items: center;
 	flex: 2;
-	& h1 {
-		text-transform: uppercase;
-		font-size: 3rem;
+	& .logo {
+		width: 15rem;
 	}
-	& img {
-		width: 2.5rem;
+	& .icon {
+		width: 3rem;
 	}
 }
 .input__row {

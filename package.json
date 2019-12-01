@@ -20,7 +20,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"compile:sass": "node-sass --include-path sass sass/main.scss   client/css/main.css"
+		"compile:sass": "node-sass --include-path sass sass/main.scss   src/css/main.css"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

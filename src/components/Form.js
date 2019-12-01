@@ -21,16 +21,19 @@ const Form = ({ formDefault, formChange, toggleMode, formValue, onClick }) => {
 	return (
 		<div className={mode ? 'form__container dark' : ' form__container '}>
 			<div className="logo__container">
-				<h1>Send N</h1>
+				<span style={{ fontSize: '.1rem', color: `${mode ? '#444' : '#f3f3f3'}`, width: '0', opacity: '0.2' }}>
+					Icon made by Freepik from www.flaticon.com
+				</span>
 				<img
-					src="https://res.cloudinary.com/snackmanproductions/image/upload/v1575230604/ramenapp/ramen_ffcqwy.png"
-					alt="Ramen Bowl Logo"
-				/>
+					className="icon"
+					src="https://res.cloudinary.com/snackmanproductions/image/upload/v1575236636/ramenapp/ramen_z9wykw.png"
+					alt="ramen bowl"
+				></img>
 				<img
-					src="https://res.cloudinary.com/snackmanproductions/image/upload/v1575230604/ramenapp/ramen_ffcqwy.png"
-					alt="Ramen Bowl Logo"
+					src="https://res.cloudinary.com/snackmanproductions/image/upload/v1575235767/ramenapp/logo_transparent_background_u1e44m.png"
+					alt="Send Noods Logo"
+					className="logo"
 				/>
-				<h1>ds</h1>
 			</div>
 			<div className="form__container--search">
 				<button className="clear__btn" onClick={onClick}>
