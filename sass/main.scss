@@ -26,9 +26,15 @@ body {
 	font-family: 'Noto Sans TC';
 	overflow: hidden;
 	color: #999;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
 }
 h1 {
 	font-family: 'Yeon Sung';
+}
+h2{
+	font-size: 1.3rem;
 }
 .main--container {
 	display: flex;
@@ -41,13 +47,26 @@ h1 {
 	height: 35vh;
 	width: 100%;
 }
-.bottom__container {
-	display: flex;
-	flex-direction: row;
-	height: 70vh;
-	width: 100%;
-}
+
 
 input {
 	font-size: 16px;
+}
+input[type=text] {   
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+}
+
+@media screen and (max-width:600px){
+	.middle__container {
+		display: flex;
+		flex-direction: row;
+		height: 25vh;
+		width: 100%;
+	}
+	h2 {
+		font-size: 1rem;
+	}
 }

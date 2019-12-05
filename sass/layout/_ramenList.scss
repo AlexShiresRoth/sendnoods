@@ -1,7 +1,7 @@
 .ramen__list--container {
-	min-height: 100vh;
+	
 	width: 100%;
-	padding: 7rem 4rem;
+	padding:  1rem 0 10rem 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -9,7 +9,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	color: #fff;
+	color: #f3f3f3;
 }
 
 .ramen--list {
@@ -50,7 +50,7 @@
 	justify-content: space-around;
 
 	&--stars {
-		color: goldenrod;
+		color: darken(#daa520,2%);
 		display: flex;
 		flex-direction: row;
 		align-items: center;

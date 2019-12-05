@@ -4,8 +4,8 @@
 	justify-content: space-around;
 	align-items: center;
 	background-color: #fff;
-	padding: 1rem;
-	min-height: 5rem;
+	padding: .5rem;
+	min-height: 4rem;
 	box-shadow: 0 2px 2px #eee;
 
 	&--search {
@@ -77,10 +77,10 @@
 	align-items: center;
 	flex: 2;
 	& .logo {
-		width: 15rem;
+		width: 10rem;
 	}
 	& .icon {
-		width: 3rem;
+		width: 2.5rem;
 	}
 }
 .input__row {
@@ -92,7 +92,7 @@
 		color: $color-white;
 	}
 	&--input {
-		padding: 1.01rem;
+		padding: .7rem;
 		width: 15rem;
 		border: 1px solid #eee;
 		background-color: #eee;
@@ -104,8 +104,8 @@
 }
 //use mixin for these two---
 .search__btn {
-	color: #fff;
-	padding: 1.1rem;
+	color: #f3f3f3;
+	padding: .8rem;
 	border: 1px solid $color-orange;
 	border-top-right-radius: 150px;
 	border-bottom-right-radius: 150px;
@@ -123,8 +123,8 @@
 	}
 }
 .clear__btn {
-	color: #fff;
-	padding: 1.1rem;
+	color: #f3f3f3;
+	padding: .8rem;
 	border: 1px solid $color-orange;
 	border-top-left-radius: 150px;
 	border-bottom-left-radius: 150px;
