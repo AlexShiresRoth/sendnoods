@@ -11,6 +11,21 @@
 	flex-direction: column;
 	background:transparent;
 	color: #f3f3f3;
+	&--enter{
+		height:40vh;
+		width: 70vw;
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2,auto);
+		justify-items: center;
+		border-radius: 5px;
+		align-content: center;
+		align-self: center;
+		overflow:hidden;
+		& .logo {
+			max-width: 25rem;
+		}
+	}
 }
 
 .ramen--list {
