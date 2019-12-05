@@ -210,8 +210,9 @@ select {
   margin: 0 0 0 0.5rem; }
 
 .ramen__list--container {
+  min-height: 50vh;
   width: 100%;
-  padding: 1rem 0 10rem 0;
+  padding: 1rem 0 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,6 +220,7 @@ select {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background: transparent;
   color: #f3f3f3; }
 
 .ramen--list {
@@ -234,7 +236,7 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 5px 5px #eeeeee;
   background: #fff;
   width: 15rem;
@@ -573,8 +575,7 @@ select {
 .dark {
   background: #333;
   color: #f3f3f3f3;
-  box-shadow: 0 4px 4px #1a1a1a;
-  border: 1px solid #322; }
+  box-shadow: 0 4px 4px #1a1a1a; }
 
 .dark-favorite {
   background: #333;
@@ -716,7 +717,8 @@ body {
   color: #999;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+  min-height: 100vh; }
 
 h1 {
   font-family: 'Yeon Sung'; }
@@ -727,7 +729,7 @@ h2 {
 .main--container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100%; }
 
 .middle__container {
   display: flex;

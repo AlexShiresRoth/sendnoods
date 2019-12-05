@@ -29,6 +29,7 @@ body {
 	-webkit-appearance: none;
     -moz-appearance: none;
 	appearance: none;
+	min-height:100vh;
 }
 h1 {
 	font-family: 'Yeon Sung';
@@ -39,7 +40,7 @@ h2{
 .main--container {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 100%;
 }
 .middle__container {
 	display: flex;

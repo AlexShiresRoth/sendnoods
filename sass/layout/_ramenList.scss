@@ -1,7 +1,7 @@
 .ramen__list--container {
-	
+	min-height:50vh;
 	width: 100%;
-	padding:  1rem 0 10rem 0;
+	padding:  1rem 0 4rem 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -9,6 +9,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	background:transparent;
 	color: #f3f3f3;
 }
 
@@ -22,7 +23,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 15px;
+	border-radius: 5px;
 	box-shadow: 0 5px 5px #eeeeee;
 	background: #fff;
 	width: 15rem;
