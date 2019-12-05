@@ -1,6 +1,7 @@
 import React, { lazy } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
+import { getRestaurants } from './actions/restaurants';
 import { api_key } from '../config/keys';
 
 const SideBar = lazy(() => import('./SideBar'));
@@ -59,6 +60,8 @@ class MainContainer extends React.Component {
 					loading: false,
 					unFiltered: res,
 				});
+
+				this.props.getRestaurants(res);
 			} catch (error) {
 				console.log(error);
 				this.setState({ restaurantsArr: [], loading: false, unFiltered: [] });
@@ -163,8 +166,10 @@ class MainContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
+	console.log(state);
 	return {
 		mode: state.mode,
+		restaurants: state.restaurants,
 	};
 };
-export default connect(mapStateToProps)(MainContainer);
+export default connect(mapStateToProps, { getRestaurants })(MainContainer);

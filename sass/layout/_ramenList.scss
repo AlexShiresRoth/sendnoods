@@ -1,7 +1,7 @@
 .ramen__list--container {
-	min-height:50vh;
+	min-height: 50vh;
 	width: 100%;
-	padding:  1rem 0 4rem 0;
+	padding: 1rem 0 4rem 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -9,19 +9,19 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	background:transparent;
+	background: transparent;
 	color: #f3f3f3;
-	&--enter{
-		height:40vh;
+	&--enter {
+		height: 40vh;
 		width: 70vw;
-		display:grid;
+		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(2,auto);
+		grid-template-rows: repeat(2, auto);
 		justify-items: center;
 		border-radius: 5px;
 		align-content: center;
 		align-self: center;
-		overflow:hidden;
+		overflow: hidden;
 		& .logo {
 			max-width: 25rem;
 		}
@@ -45,8 +45,10 @@
 	transition: all 0.2s ease-in-out;
 	padding: 0 1rem;
 	color: $color-orange;
-
-	p:last-child {
+	& p {
+		font-size: 1rem;
+	}
+	& p:last-child {
 		margin: 0.5rem 0;
 	}
 	&:hover {
@@ -66,7 +68,7 @@
 	justify-content: space-around;
 
 	&--stars {
-		color: darken(#daa520,2%);
+		color: darken(#daa520, 2%);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
